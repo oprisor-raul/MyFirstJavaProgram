@@ -12,11 +12,12 @@ class Test
         System.out.println("Input the numbers:");
         while (lastNumber != 0) {
             lastNumber = scann.nextInt();
-            sum = sum + lastNumber;
+            sum += lastNumber;
             counter ++;
         }
 
         float average = (float) sum/counter;
+        System.out.println("The average sum is: ");
         System.out.println(average);
     }
 }
